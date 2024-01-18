@@ -29,7 +29,7 @@ Here are the commands to complete this step (only execute one command at a time)
 > Command to install dependencies:
 - pip install flask celery redis plyer tkinter
 
-- If you need to install additional frameworks, libraries, or packages, it will be noticable when you see a yellow squiggly line.
+> If you need to install additional frameworks, libraries, or packages, it will be noticable when you see a yellow squiggly line.
 
 3. Go to your google account and click on your profile. It should have a button that says "Manage your Google Account".
 
@@ -71,4 +71,4 @@ In each terminal, activate the virtual environment and then run one of the follo
 > Terminal 2:
 - python3 celery_worker.py
 
-11. Once both app.py and celery_worker.py are running
+11. Once a virtual environment is activated in both terminals, and you are running both app.py and celery_worker.py, you should be able to fill in the text boxes that are in the app. The text boxes include the email, app password, medication name, and reminder time. Click on the "Schedule Reminder" button, and you should see a new page that says "Task scheduled successfully!".
