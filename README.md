@@ -10,6 +10,7 @@ In order to get the best experience of this GitHub repository, you need to activ
 2. Make sure you have two terminals up at the same time.
 
 In each terminal, activate the virtual environment and then run one of the following commands based on the terminal like this:
+
 Terminal 1:
     python3 app.py
 
