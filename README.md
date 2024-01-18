@@ -8,3 +8,10 @@ Assuming you already have a GitHub account, use Visual Studio Code, and have alr
 In order to get the best experience of this GitHub repository, you need to activate a virtual environment in Visual Studio Code. This will isolate any project dependencies by ensuing they don’t interfere with other projects or systems.
 
 2. Make sure you have two terminals up at the same time.
+
+In each terminal, activate the virtual environment and then run one of the following commands based on the terminal like this:
+Terminal 1:
+    python3 app.py
+
+Terminal 2:
+    python3 celery_worker.py
