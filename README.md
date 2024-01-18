@@ -1,1 +1,3 @@
 # python-flask-med-app
+
+Welcome to my Medication Reminder project! This Python application, built on the Flask framework, helps users manage their medication schedules through timely email reminders. To get the best experience of this GitHub repository, be sure to follow the step-by-step instructions outlined below. I developed this project using Visual Studio Code as my source-code editor and Ubuntu (Linux) as my operating system. If you’re using Windows 11, you’ll find the relevant commands included in the instructions.
