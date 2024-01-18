@@ -16,7 +16,7 @@ class MedicineReminderApp:
         self.email_entry.pack()
 
         # Label and Entry for Password
-        self.password_label = tk.Label(master, text="5gkw lwp3 sD2h 0iqJ")
+        self.password_label = tk.Label(master, text="PASTE_GOOGLE_APP_PASSWORD_HERE")
         self.password_label.pack()
 
         self.password_entry = tk.Entry(master, show="*")
