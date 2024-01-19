@@ -5,8 +5,8 @@ Welcome to my Medication Reminder project! This Python application, built on the
 # Instructions:
 - DO NOT PUSH ANY CHANGES TO YOUR GITHUB ACCOUNT UNTIL YOU COMPLETE THESE STEPS FIRST. This is crucial for security reasons and to prevent the loss or misuse of your personal information.
 
-Assuming you already have a GitHub account, use Visual Studio Code, have a Google account, and have already cloned my repository:
-1. Activate a virtual environment: In order to get the best experience of this GitHub repository, you need to activate a virtual environment in Visual Studio Code. This will isolate any project dependencies by ensuing they don’t interfere with other projects or systems.
+Assuming you have a GitHub account, use Visual Studio Code, possess a Google account, and have cloned my repository:
+1. Activate a virtual environment: To enhance your experience with this GitHub repository, activate a virtual environment in Visual Studio Code. This ensures isolation of project dependencies, preventing interference with other projects or systems.
 
 Here are the commands to complete this step (only execute one command at a time):
 
@@ -24,27 +24,27 @@ Here are the commands to complete this step (only execute one command at a time)
 
 - .\venv\Scripts\Activate
 
-2. Install the necessary frameworks, libraries, or packages to the project. These include celery, redis, flask, plyer, and tkinter. 
+2. Install the necessary frameworks, libraries, or packages to the project. For this project, you need to install celery, redis, flask, plyer, and tkinter.
 
 > Command to install dependencies:
 - pip install flask celery redis plyer tkinter
 
-> If you need to install additional frameworks, libraries, or packages, it will be noticable when you see a yellow squiggly line.
+> If additional frameworks, libraries, or packages need installation, you'll notice a yellow squiggly line under that name.
 
-3. Go to your google account and click on your profile. It should have a button that says "Manage your Google Account".
+3. On the upper right corner is your Google profile picture. Click on it, then once you do, you should see a button that says "Manage your Google Account".
 
-4. Once you click that button, you need to go to "Security". Once you are there, go to "2-Step Verification". You need to enter your mobile phone number to verify. Once you do that, 2-Step Verification should be enabled.
+4. After clicking the "Manage your Google Account" button, navigate to "Security". Within the Security section, access "2-Step Verification". Enter your mobile phone number for verification, and once completed, "2-Step Verification" will be enabled.
 
-5. Scroll down to the bottom of the "2-Step Verification" page, and you should see an "App passwords" section.
+5. Scroll to the bottom of the "2-Step Verification" page to find the "App passwords" section.
 
-6. Create an .env file in Visual Studio Code. This is IMPORTANT.
+6. Create an .env file in Visual Studio Code. This step is CRUCIAL.
 
-7. Go to "App passwords", and add the name of your app in the text box. An app password should be given to you. DO NOT share this with ANYONE. Copy the password and place it somewhere PRIVATE AND SAFE such as an .env file.
-- MAKE SURE IT LOOKS EXACTLY LIKE THE PASSWORD GOOGLE PROVIDED. 
+7. In the "App passwords" section, enter your app's name in the text box. A unique app password will be generated for you. DO NOT share this password with anyone. Copy the password and securely store it in a private location, such as an .env file.
+- IMPORTANT: Ensure that the copied password matches EXACTLY with the one provided by Google. Accuracy is CRUCIAL.
 
-- YOU WILL NOT BE ABLE TO SEE THE PASSWORD FROM GOOGLE AFTER COPYING IT.
+- IMPORTANT: YOU WILL NOT BE ABLE TO SEE THE PASSWORD FROM GOOGLE AFTER COPYING IT.
 
-8. In the "med_reminder.py" and "tasks.py" files (which are located in the root directory), paste the SAME email that you have used to obtain the Google app password from the "2-Step Verification" section. So for example, if you used the email "mal@gmail.com" to obtain the Google app password, you would use that email and paste it into those two files where indicated.
+8. In the "med_reminder.py" and "tasks.py" files (located in the root directory), paste the SAME email you used to obtain the Google app password in the "2-Step Verification" section. For instance, if you used the email "mal@gmail.com" for the Google app password, paste that email into the designated sections in both files.
 
 > med_reminder.py:
 
@@ -56,14 +56,12 @@ Here are the commands to complete this step (only execute one command at a time)
 
 - line 27: server.sendmail(email, 'recipient_email@gmail.com', f'Subject: Medicine Reminder\n\nIt\'s time to take your {medicine_name}!')
 
-9. In the "med_reminder.py" file, paste the app password you received from the "2-Step Verification" section from you .env file. Copy that password and paste it into the "med_reminder.py" file.
+9. In the "med_reminder.py" file, paste the app password obtained from the "2-Step Verification" section in your .env file. Copy the password and insert it into the designated section in the "med_reminder.py" file.
 
 > med_reminder.py:
 - line 19: self.password_label = tk.Label(master, text="PASTE_GOOGLE_APP_PASSWORD_HERE")
 
-10. Make sure you have two terminals up at the same time.
-
-In each terminal, activate the virtual environment and then run one of the following commands based on the terminal like this:
+10. Ensure you have two terminals open simultaneously. In each terminal, activate the virtual environment, and then run one of two commands listed below in each terminal:
 
 > Terminal 1:
 - python3 app.py
@@ -71,4 +69,4 @@ In each terminal, activate the virtual environment and then run one of the follo
 > Terminal 2:
 - python3 celery_worker.py
 
-11. Once a virtual environment is activated in both terminals, and you are running both app.py and celery_worker.py, you should be able to fill in the text boxes that are in the app. The text boxes include the email, app password, medication name, and reminder time. Click on the "Schedule Reminder" button, and you should see a new page that says "Task scheduled successfully!".
+11. After activating the virtual environment in both terminals and running "app.py" and "celery_worker.py", you can input information into the text boxes within the app. Complete details such as email, app password, medication name, and reminder time. Click the "Schedule Reminder" button, and you should be directed to a new page displaying "Task scheduled successfully!".
