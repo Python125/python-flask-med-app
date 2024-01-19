@@ -29,7 +29,7 @@ Here are the commands to complete this step (only execute one command at a time)
 > Command to install dependencies:
 - pip install flask celery redis plyer tkinter
 
-> If additional frameworks, libraries, or packages need installation, you'll notice a yellow squiggly line under that name.
+- If additional frameworks, libraries, or packages need installation, you'll notice a yellow squiggly line under that name.
 
 3. On the upper right corner is your Google profile picture. Click on it, then once you do, you should see a button that says "Manage your Google Account".
 
